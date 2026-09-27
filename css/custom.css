@@ -1,0 +1,104 @@
+/* ===== Фон (Картинка с закатом, но сильно затемнённая) ===== */
+#page_wrapper,
+#page_container {
+  background-image: url('https://staticonline.duckdns.org/api/public/dl/EuNRx5qF?inline=true') !important;
+  background-size: cover !important;
+  background-position: center bottom !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Сильное затемнение фона, чтобы картинка не бликовала */
+#page_wrapper::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.70) 40%,
+    rgba(0, 0, 0, 0.80) 100%
+  ) !important;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===== Карточки сервисов (Тёмные) ===== */
+.service-card,
+.bookmark-card,
+li.bookmark a {
+  background: rgba(15, 20, 30, 0.75) !important;
+  backdrop-filter: blur(12px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.25s ease !important;
+}
+
+.service-card:hover,
+.bookmark-card:hover,
+li.bookmark a:hover {
+  background: rgba(30, 40, 60, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ===== Заголовки групп (Cloud, Communication и т.д.) ===== */
+.service-group-name,
+.bookmark-group-name,
+h2 {
+  color: #e5e7eb !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* ===== Текст внутри карточек ===== */
+.service-name,
+.bookmark-name {
+  color: #f3f4f6 !important;
+}
+
+.service-description {
+  color: #a1a1aa !important;
+  opacity: 0.9;
+}
+
+/* ===== Поисковая строка ===== */
+#search-input,
+input[type="search"],
+.search-input {
+  background: rgba(15, 20, 30, 0.75) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  color: #f3f4f6 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+#search-input::placeholder {
+  color: #8c8c96 !important;
+}
+
+/* ===== Виджеты / дата ===== */
+#information-widgets,
+.information-widget {
+  background: rgba(15, 20, 30, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 12px !important;
+  color: #e5e7eb !important;
+}
+
+/* ===== Иконки ===== */
+.service-icon,
+.bookmark-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)) !important;
+}
+
+/* ===== Общий тёмный акцент ===== */
+:root {
+  --color-900: 15 20 30;
+}
