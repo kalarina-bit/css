@@ -6,9 +6,7 @@ GitHub-style themes for **Gitea 1.27.x** — light and dark, built with modern C
   <img src="assets/preview-2.jpg" width="100%" alt="Theme preview">
 </p>
 
-<p align="center">
-  <img src="assets/preview-1.png" width="160" alt="css">
-</p>
+
 
 ## Themes
 
