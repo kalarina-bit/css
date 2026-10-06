@@ -1,6 +1,6 @@
 # css
 
-GitHub-style themes for **Gitea 1.27.x** — light and dark, built with modern CSS (`color-mix()`), matching GitHub's typography, spacing and color tokens.
+GitHub-style themes for **Gitea** — light and dark,  matching GitHub's typography, spacing and color tokens.
 
 <p align="center">
   <img src="assets/preview-2.jpg" width="100%" alt="Theme preview">
