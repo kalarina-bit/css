@@ -16,10 +16,6 @@ GitHub-style themes for **Gitea** — light and dark,  matching GitHub's typogra
 | [`css/theme-dark.css`](css/theme-dark.css) | GitHub Dark — for `prefers-color-scheme: dark` |
 | [`css/theme-auto.css`](css/theme-auto.css) | Switches between the two automatically based on system preference |
 
-## Requirements
-
-A browser with `color-mix()` support: Chrome 111+, Firefox 113+, Safari 16.2+.
-
 ## Installation
 
 1. Copy the files from [`css/`](css/) into your Gitea instance's `custom/public/assets/css/` directory (or wherever your Gitea deployment serves custom CSS from).
