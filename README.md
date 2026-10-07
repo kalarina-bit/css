@@ -24,4 +24,6 @@ GitHub-style themes for **Gitea** — light and dark,  matching GitHub's typogra
 
 ## License
 
-Use and adapt freely.
+Released under the **MIT License** — see the [LICENSE](LICENSE) file. You may use, modify and redistribute the themes, including in commercial Gitea instances, as long as the copyright notice is kept.
+
+The color values follow GitHub's [Primer](https://github.com/primer/primitives) design tokens, © GitHub Inc., also MIT-licensed. This project is not affiliated with or endorsed by GitHub or Gitea.

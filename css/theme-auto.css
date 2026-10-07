@@ -1,1 +1,2 @@
+/* SPDX-License-Identifier: MIT · Copyright (c) 2026 kalarina-bit · https://github.com/kalarina-bit/css */
 @import "./theme-light.css"(prefers-color-scheme:light);@import "./theme-dark.css"(prefers-color-scheme:dark);
